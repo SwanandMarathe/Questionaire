@@ -1,0 +1,5 @@
+<Alloy>
+
+	<Button id="checkbox" class="checkbox" onClick="clickCheckbox"/>
+
+</Alloy>

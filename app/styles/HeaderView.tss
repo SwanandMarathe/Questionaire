@@ -1,0 +1,61 @@
+
+"#headerView" : {
+	height : 70,
+	top : 0,
+	backgroundColor : "#e6e6e6"
+}
+
+"#backView" : {
+	left : 10,
+	bottom : 0,
+	height : Titanium.UI.SIZE,
+	width : Titanium.UI.SIZE
+}
+
+"#rightView" : {
+	right : 20,
+	bottom : 0,
+	height : Titanium.UI.SIZE,
+	width : Titanium.UI.SIZE
+}
+
+"#backImage" : {
+	left : 0,
+	bottom : 0,
+	height : 50,
+	width : 50,
+	image : '/headerImages/arrow_back.png'
+}
+
+"#rightImage" : {
+	left : 5,
+	bottom : 0,
+	height : 50,
+	width : 50,
+	image : '/headerImages/arrow_next.png'
+}
+
+"#rightTitle" : {
+	left : 0,
+	text : L("next"),
+	font : {fontSize : 14},
+	color : '#1dacdc',
+	bottom : 15,
+	visible : false
+}
+
+"#backTitle" : {
+	left : 23,
+	text : L("Back"),
+	font : {fontSize : 14},
+	color : '#1dacdc',
+	bottom : 15,
+	visible : false
+}
+
+"#titleLabel" : {
+	text : 'Question',
+	font : {fontSize : 19},
+	bottom : 10,
+	color : '#000000'
+}

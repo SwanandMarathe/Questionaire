@@ -1,0 +1,83 @@
+
+".container" : {
+  // exitOnClose :true
+}
+
+"#baseView" : {
+	top : 71,
+	backgroundColor : "#00ffffff",
+	separatorColor  : "#00ffffff",
+	bottom : 150,
+	layout : 'vertical',
+	left : 20,
+	right : 20,
+	contentWidth : '80%'
+}
+
+".lblSubId" : {
+	// text : L("Can you please tell me the name(s) of magzine(s) do you subscribe to?"),
+	top : 20,
+	left : 20,
+	right : 20
+}
+
+".txtSubId" : {
+	// hintText : L("SubscriberId"),
+	top : 20,
+	left : 20,
+	right : 20
+}
+
+"#lblColorTv" : {
+	text : L("brand_cooler"),
+}
+"#txtColorTv" : {
+	hintText : L("brand_cooler"), 
+}
+
+"#lblMusicSys" : {
+	text : L("brand_dslr"),
+}
+"#txtMusicSys" : {
+	hintText : L("brand_dslr"), 
+}
+
+"#lblCelingFan" : {
+	text : L("brand_basicphone"),
+}
+"#txtCelingFan" : {
+	hintText : L("brand_basicphone"), 
+}
+
+"#lblSmartPhone" : {
+	text : L("brand_hotplate"),
+}
+"#txtSmartPhone" : {
+	hintText : L("brand_hotplate"), 
+}
+
+"#lblAircocnd" : {
+	text : L("brand_dishwash"),
+}
+"#txtAircocnd" : {
+	hintText : L("brand_dishwash"), 
+}
+
+"#lblFridge" : {
+	text : L("brand_gps"),
+}
+"#txtFridge" : {
+	hintText : L("brand_gps"), 
+}
+
+
+"#btnNext" : {
+	bottom : 50,
+	title : L("next"),
+	backgroundColor : "#00ffffff",
+	separatorColor  : "#00ffffff",
+}
+
+"#lblPercent" : {
+	text : "84%"
+}

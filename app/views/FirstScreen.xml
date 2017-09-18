@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container" id="firstScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<View id="baseView">
+			<!-- <Label id="lblQues"></Label> -->
+		</View>
+		<Label id="lblPercent"></Label>
+	</Window>
+</Alloy>

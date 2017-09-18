@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container" id="fourtySixthScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<View id="baseView">
+			<Label id="lblQues"></Label>
+		</View>
+		<Button id="btnNext" onClick="openNextScreen"></Button>
+	</Window>
+</Alloy>

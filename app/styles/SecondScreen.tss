@@ -1,0 +1,30 @@
+
+".container" : {
+  // exitOnClose :true
+}
+
+"#baseView" : {
+	top : 71,
+	backgroundColor : "#00ffffff",
+	separatorColor  : "#00ffffff",
+	bottom : 90,
+	layout : 'vertical'
+}
+
+"#lblQues" : {
+	text : L("dummyOrLive"),
+	top : 20,
+	left : 20,
+	right : 20
+}
+
+"#btnNext" : {
+	bottom : 50,
+	title : L("next"),
+	backgroundColor : "#00ffffff",
+	separatorColor  : "#00ffffff",
+}
+
+"#lblPercent" : {
+	text : "2%"
+}

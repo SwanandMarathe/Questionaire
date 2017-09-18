@@ -1,0 +1,289 @@
+< ?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="Back">Back</string>
+    <string name="Alert">Alert</string>
+    <string name="Ok">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    
+	<string name="language_selector">Please Select a Language</string>
+	
+    <string name="dummyOrLive">Is this a 'Dummy' survey or 'live'?</string>
+    <string name="dummy">Dummy</string>
+    <string name="live">Live</string>
+    
+    <string name="subscriber_id">Subscriber ID</string>
+    
+    <string name="dwelling_structure">Please record type of dwelling structure? (Do not ask the respondent, please observe and code accordingly below)</string>
+    <string name="house_in_slum">House in slum area</string>
+    <string name="chawl">Chawl</string>
+    <string name="row_house">Row houses</string>
+    <string name="independent_house">Independent house</string>
+    <string name="house_one">House in 1 to 3 floor building</string>
+    <string name="house_four">House in 4 to 7 floor building</string>
+    <string name="high_rise">High rise building (House in 7+ floor building)</string>
+    
+    <string name="respondent_rady">Is respondent ready to participate</string>
+    <string name="respondent_yes">Yes, respondent has allowed to participate</string>
+    <string name="respondent_no">No, he has asked me to come later</string>
+    <string name="digicom_invalid">Digicom Series Invalid/Not matching</string>
+    <string name="stb_not_working">Set Top Box USB not working</string>
+    <string name="more_conn">There were more than 2 connections</string>
+    <string name="respondent_refuse">No, he has refused to participate</string>
+    <string name="respondent_refuse_reason">can you please specify the reason</string>
+    
+    <string name="appo_date_time">Please specify the next appointment date and time</string>
+    <string name="date_and_time">date and time</string>
+    
+    <string name="respondent_name">Respondent's Name</string>
+    <string name="respondent_mob_no">Respondent’s Mobile Number</string>
+    <string name="respondent_age">Respondent’s Age</string>
+    
+    <string name="respondent_education">Education of the Chief Wage Earner</string>
+    <string name="illiterate">Illiterate</string>
+    <string name="literate">School – Upto 4 years</string>
+    <string name="school_five">School – 5 to 9 years</string>
+    <string name="school_ssc">SSC / HSC</string>
+    <string name="school_diploma">Some College (including Diploma)</string>
+    <string name="school_graduate">Graduate / Post Graduate </string>
+    <string name="school_post_graduate">Graduate / Post Graduate</string>
+    
+    <string name="respondent_work_label">Is the CWE runs a business or works somewhere?</string>
+    <string name="respondent_service">Service</string>
+    <string name="respondent_business">Business</string>
+    
+    <string name="respondent_businesss_type">Which business do you run?</string>
+    
+    <string name="business_worker">Approximately how many workers in your business</string>
+    <string name="worker_none">Businessmen/Industrialist No. of employees-None</string>
+    <string name="worker_one">Businessmen/Industrialist No. of employees- 1-9</string>
+    <string name="worker_ten">Businessmen/Industrialist No. of employees- 10+</string>
+    <string name="worker_self">Self Employed Professional</string>
+    <string name="worker_trader">Petty Trader</string>
+    <string name="worker_shop_owner">Shop Owner</string>
+    <string name="worker_skilled">Skilled Worker</string>
+    
+    <string name="worker_service_type">At what position does CWE work?</string>
+    
+    <string name="service_mention_type">Please match the closest position that respondent has mentioned.</string>
+    <string name="worker_clerical">Clerical / Salesman</string>
+    <string name="worker_supervisory">Supervisory Level</string>
+    <string name="worker_officer_junior">Officers / Executives - Junior</string>
+    <string name="worker_officer_senior">Officers / Executives - Middle / Senior</string>
+    <string name="worker_skilled_one">Skilled Worker</string>
+    
+    <string name="stb_type_ques">Monitor the set top box (STB) type?</string>
+    <string name="stb_type_sd">SD – Standard Definition</string>
+    <string name="stb_type_hd">HD – High Definition</string>
+    <string name="stb_type_hdpvr">HD PVR</string>
+    <string name="stb_type_hdtpvr">HD Transferred PVR</string>
+    <string name="stb_type_sdpvr">SD PVR</string>
+    <string name="stb_type_4k">4K</string>
+    <string name="stb_type_dnk">Don’t know/Can’t say</string>
+    
+    <string name="own_tv_ques">Do you own a 'Full HD' or 'HD' or 'HD Ready' television in your home?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dont_know">Don’t know/Can’t say</string>
+    
+    <string name="working_color_tv">How many working Colour TV Sets have you owned or have accessed to?</string>
+    
+    <string name="family_member_count">Including you, how many members are there in your family? who are currently living in the same house and share the food from the same kitchen in the house - Please do not count maids and servants here.</string>
+    
+    <string name="family_member_list">Plase mention the age and gender of the family member starting with house wife and chief wage earner and then the youngest to oldest \n if chief wage earner is house wife click here -</string>
+    
+    <string name="family_internet_access">Do you or any one in your family access internet? </string>
+    
+    <string name="kind_of_conn">What kind of connection(s) do you have at home to access internet</string>
+	<string name="broadband">Broadband</string>
+ 	<string name="dongle">Dongle</string>
+ 	
+ 	<string name="device_list">I will now read out devices which can be used to access internet. Please tell now how often do you/ your family use it to access internet?</string>
+ 	<string name="device_laptop">Laptop / Desktop</string>
+    <string name="device_mobile">Mobile</string>
+    <string name="device_tablet">Tablet</string>
+    <string name="device_tv">Television</string>
+    <string name="device_other">Others</string>
+     
+    <string name="often_device_usage">How often do you/ your family use it to access the internet on this device?</string>
+    <string name="use_donot">DO NOT USE</string>
+    <string name="use_daily">Daily</string>
+    <string name="use_onceweek">Once a week</string>
+    <string name="use_oncefort">Once a fortnight</string>
+    <string name="use_oncemonth">Once a month</string>
+    <string name="use_less_frequent">Less frequent</string>
+    <string name="use_twice_week">Twice a week</string>
+     
+    <string name="instrument_name_lbl">I will read out the devices, can you please tell me, from which devices/instruments you generally watch movies, daily soaps, program, sports etc.? </string>
+    <string name="on_telev">On Television</string>
+    <string name="no_not_access">Do not access</string>
+    <string name="yes_i_do">Yes I watch on this device</string>
+     
+    <string name="on_mobile">On Mobile</string>
+    <string name="on_desktop">On Desktop / Laptop</string>
+    <string name="on_tablet">On Tablet</string>
+    <string name="on_other">On other device</string>
+     
+ 	<string name="specify_other_device">Please specify the Other Device Name that you access movies, daily soaps, program, sports etc on</string>
+  	<string name="member_tv_consumption">Considering all the members of your household, for how long is the MAIN TV set ON in your household?</string>
+  	
+  	<string name="tv_consump_weekday">For how much time on an average the Main TV set is switched on in your household on a weekday (Monday-Saturday) during an average week?</string>
+    <string name="tv_consump_weekday_off">Is switched off</string>
+    <string name="tv_consump_weekday_half">Less than 1/2 hour</string>
+    <string name="tv_consump_weekday_one">1/2 hour to 1 hour</string>
+    <string name="tv_consump_weekday_two">1 hours to 2 hours</string>
+ 	<string name="tv_consump_weekday_five">1 hours to 5 hours</string>
+ 	<string name="tv_consump_weekday_nine">5 hour to 9 hour</string>
+    <string name="tv_consump_weekday_eleven">9 hours to 11 hours</string>
+ 	<string name="tv_consump_weekday_elevenplus">11 + hours</string>
+
+	<string name="tv_consump_weekend">For how much time on an average the Main TV set is switched on in your household on an average Sunday/Holiday?</string>
+    <string name="tv_consump_weekend_off">Is switched off</string>
+    <string name="tv_consump_weekend_half">Less than 1/2 hour</string>
+    <string name="tv_consump_weekend_one">1/2 hour to 1 hour</string>
+    <string name="tv_consump_weekend_two">1 hours to 2 hours</string>
+ 	<string name="tv_consump_weekend_five">1 hours to 5 hours</string>
+ 	<string name="tv_consump_weekend_nine">5 hour to 9 hour</string>
+    <string name="tv_consump_weekend_eleven">9 hours to 11 hours</string>
+ 	<string name="tv_consump_weekend_elevenplus">11 + hours</string>
+    
+    <string name="paper_subs">Can you please tell me the names of newspaper(s) do you subscribe to? (Type names separated by comma).</string>
+    <string name="magzine_subs">Can you please tell me the names of Magazine(s) do you subscribe to? (Type names separated by comma).</string>
+    <string name="paper_read">Can you please tell me the names of newspaper(s) do you READ.</string>
+    <string name="magzine_raed">Can you please tell me the names of Magazine(s) do you READ.</string>
+    
+    <string name="tatasky_subs">Can you please provide me the details of the base pack of Tata Sky you have subscribed for your main TV set?</string>
+    <string name="tatasky_bumper">Bumper</string>
+    <string name="tatasky_dham_kid">Dhamaal Kids</string>
+    <string name="tatasky_dham_mix">Dhamaal Mix</string>
+    <string name="tatasky_dhoom">Dhoom</string>
+    <string name="tatasky_99">My 99 Pack</string>
+    <string name="tatasky_souspl">South Special</string>
+    <string name="tatasky_sospspl">South Sports Special</string>
+    <string name="tatasky_ultra">Ultra</string>
+    <string name="tatasky_other">Other</string>
+    
+    <string name="subs_cost">What is your monthly subscription cost for TATA Sky connection?</string>
+ 	<string name="subs_cost150">Less than or equal to INR 150</string>
+ 	<string name="subs_cost300">Between INR 151 to INR 300</string>
+ 	<string name="subs_cost600">Between INR 301 to INR 600</string>
+ 	<string name="subs_cost750">Between INR 601 to INR 750</string>
+ 	<string name="subs_cost900">Between INR 751 to INR 900</string>
+ 	<string name="subs_cost900p">Greater than INR 900</string>
+ 	<string name="subs_cost_dnk">Don’t know/Can’t say</string>
+    
+    <string name="conn_timeline">Since how long you are using TATA Sky connection?</string>
+    <string name="conn_timeline6">Less than 6 months</string>
+    <string name="conn_timeline1">6 months to 1 year</string>
+    <string name="conn_timeline2">1 to 2 years</string>
+    <string name="conn_timeline3">2 to 3 years</string>
+  	<string name="conn_timeline3p">3+ years</string>
+  	<string name="conn_timelinednk">Don’t know/Can’t say</string>
+      
+  	<string name="avg_income">Could you kindly tell me what is the average monthly income of this household?</string>
+    <string name="avg_income10">Up to Rs. 10,000</string>
+    <string name="avg_income30">Rs. 10,001 - 30,000</string>
+    <string name="avg_income50">Rs. 30,001 - 50,000</string>
+    <string name="avg_income70">Rs. 50,001 - 70,000</string>
+    <string name="avg_income1">Rs. 70,001 - 1,00,000</string>
+    <string name="avg_income5">Rs. 1,00,001 - 5,00,000</string>
+    <string name="avg_income5p">Rs. 5,00,000 +</string>
+    <string name="avg_incomednk">Refused to answer</string>
+    
+    <string name="brand_tv">Which brand of Colour TV do you own</string>
+    <string name="brand_musicsys">Which brand of Music System – Fix do you own</string>
+    <string name="brand_fan">Which brand of Ceiling Fan do you own</string>
+    <string name="brand_smartphone">Which brand of Smart phones (OS - Android or iOS) do you own</string>
+    <string name="brand_ac">Which brand of Air Conditioner do you own</string>
+    <string name="brand_fridge">Which brand of Refrigerator do you own</string>
+	
+	<string name="brand_washingmc">Which brand of Washing machine do you own</string>
+    <string name="brand_pc">Which brand of Personal computer/ laptop do you own </string>
+    <string name="brand_twowheel">Which brand of 2 Wheeler do you own</string>
+    <string name="brand_fourwheel">Which brand of Car/ Jeep/ Van do you own</string>
+    <string name="brand_lpg">Which brand of  LPG Stove do you own</string>
+    <string name="brand_microwave">Which brand of Microwave Oven do you own</string>
+    
+    <string name="brand_vaccum">Which brand of Vacuum Cleaner do you own</string>
+    <string name="brand_elewater">Which brand of Electric Water Purifier do you own</string>
+    <string name="brand_nonelewater">Which brand of Non Electric Water Purifier do you own</string>
+    <string name="brand_mixer">Which brand of Mixer/Grinder do you own</string>
+    <string name="brand_inverter">Which brand of Inverter do you own </string>
+    <string name="brand_generator">Which brand of Power Generator do you own</string>
+    
+    <string name="brand_cooler">Which brand of Air Cooler do you own</string>
+    <string name="brand_dslr">Which brand of Digital SLR Camera do you own </string>
+    <string name="brand_basicphone">Which brand of Basic Mobile phones do you own</string>
+    <string name="brand_hotplate">Which brand of Hot Plate/Induction stove do you own</string>
+    <string name="brand_dishwash">Which brand of Dish Washing Machine do you own</string>
+    <string name="brand_gps">Which brand of Car Navigation Systems / GPS do you own</string>
+    
+    <string name="manage_install_dongle">Did you manage to install any dongles</string>
+    <string name="dongle_mob_no">Enter 10 digit Dongle Mobile Number</string>
+    <string name="digicomp_no">Please note Digicomp Series No.</string>
+    <string name="card_id_no">Please note Card ID Number</string>
+    
+    <string name="response_on_sms">What response did you receive on the SMS?</string>
+    <string name="response_on_sms_success">Hi, the process is successful</string>
+    <string name="response_on_sms_sry">Sorry, Please try after some time</string>
+    <string name="response_on_sms_not_going">Message was not going through from my mobile.</string>
+    <string name="response_on_sms_not_server">Message was sent. No reply received from the server.</string>
+    <string name="response_on_sms_digicom_invalid">Digicom Series Invalid/Not matching</string>
+    <string name="response_on_sms_stbusb">Set Top Box USB not working</string>
+    <string name="response_on_sms_ignore">Ignore this response. Questionnaire filled wrongly</string>
+    
+    <string name="tank_you_survey">Thank you for completing the survey</string>
+    
+    <string name="items_in_home">Please take a look at this list and tell me which of these items do you have at home? (It could be owned by you, your family, or provided by the employer or it could be available in the house you live in; but it should be for the use of just you or your family.)</string>
+    <string name="lpg_stove">LPG Stove</string>
+    <string name="ceiling_fan">Ceiling Fan</string>
+    <string name="fridge">Refrigerator</string>
+    <string name="washing_mc">Washing Machine</string>
+    <string name="personal_comp">Personal computer/ laptop</string>
+    <string name="moter_cycle">2-Wheelers</string>
+    <string name="four_wheeler">Car/ Jeep/ Van</string>
+    <string name="air_cond">Air Conditioner</string>
+    <string name="agri_land">Agricultural Land</string>
+    <string name="micro_wave">Microwave Oven</string>
+    <string name="digital_slr">Digital SLR Camera</string>
+    <string name="smart_phone">Smart phones</string>
+    <string name="cycle">Bicycle</string>
+    <string name="radio">Radio/Transistor</string>
+    <string name="video_game">Video Game – PS2 / Xbox</string>
+    <string name="kerosene_stove">Primus (paraffin / kerosene) stove</string>
+    <string name="dining_table">Dining Table</string>
+    <string name="kitchen_sink">Kitchen Sink</string>
+    
+    <string name="basic_phone">Basic Mobile phones</string>
+    <string name="car_gps">Car Navigation Systems / GPS</string>
+    <string name="dish_washer">Dish Washing Machine</string>
+    <string name="vaccum_cleaner">Vacuum Cleaner</string>
+    <string name="ele_water_purifier">Electric Water Purifier</string>
+    <string name="nele_water_purifier">Non Electric Water Purifier</string>
+    <string name="mixer">Mixer/Grinder</string>
+    <string name="inverter">Inverter</string>
+    <string name="air_cooler">Air Cooler</string>
+    <string name="induction_stove">Hot Plate/Induction stove</string>
+    <string name="generator">Power Generator</string>
+    <string name="music_sys">Music System – Fix</string>
+    <string name="music_sysp">Music System–Portable (e.g.MP3 Player, IPOD etc)</string>
+    
+    <string name="none_above">None of the Above</string>
+    
+    <string name="home_activity">Do you or anyone in the household, take part in the following activities nowadays?</string>
+    <string name="home_activity_restautant">Sit down for a meal in a restaurant</string>
+    <string name="home_activity_drink">Have drink / snack in café / pub</string>
+    <string name="home_activity_shopping">Shopping for pleasure / browsing</string>
+    <string name="home_activity_gym">Exercise to keep fit  at home or at Gym (e.g. swimming, running,  tai chi etc.)</string>
+    <string name="home_activity_library">Visit a public library</string>
+    <string name="home_activity_dayout">Have a day out (e.g. to go sightseeing)</string>
+    <string name="home_activity_concert">Go to a concert/stage performance</string>
+    <string name="home_activity_party">Go to a celebration / party</string>
+    <string name="home_activity_child">Spending time with children or grandchildren at home or  Elsewhere</string>
+    <string name="home_activity_cleaning">Cleaning or other household chores</string>
+    <string name="home_activity_holiday">Go out of town for a Holiday/ Vacation or Visit Native place</string>
+    <string name="home_activity_none_above">None of the Above</string>
+    
+
+</resources>

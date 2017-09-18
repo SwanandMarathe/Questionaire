@@ -1,0 +1,84 @@
+
+".container" : {
+  // exitOnClose :true
+}
+
+"#baseView" : {
+	top : 71,
+	backgroundColor : "#00ffffff",
+	separatorColor  : "#00ffffff",
+	bottom : 150,
+	layout : 'vertical',
+	left : 20,
+	right : 20,
+	contentWidth : '80%'
+}
+
+".lblSubId" : {
+	// text : L("Can you please tell me the name(s) of magzine(s) do you subscribe to?"),
+	top : 20,
+	left : 20,
+	right : 20
+}
+
+".txtSubId" : {
+	// hintText : L("SubscriberId"),
+	top : 20,
+	left : 20,
+	right : 20
+}
+
+"#lblColorTv" : {
+	text : L("brand_vaccum"),
+}
+"#txtColorTv" : {
+	hintText : L("brand_vaccum"), 
+}
+
+"#lblMusicSys" : {
+	text : L("brand_elewater"),
+}
+"#txtMusicSys" : {
+	hintText : L("brand_elewater"), 
+}
+
+"#lblCelingFan" : {
+	text : L("brand_nonelewater"),
+}
+"#txtCelingFan" : {
+	hintText : L("brand_nonelewater"), 
+}
+
+"#lblSmartPhone" : {
+	text : L("brand_mixer"),
+}
+"#txtSmartPhone" : {
+	hintText : L("brand_mixer"), 
+}
+
+"#lblAircocnd" : {
+	text : L("brand_inverter"),
+}
+"#txtAircocnd" : {
+	hintText : L("brand_inverter"), 
+}
+
+"#lblFridge" : {
+	text : L("brand_generator"),
+}
+"#txtFridge" : {
+	hintText : L("brand_generator"), 
+}
+
+
+"#btnNext" : {
+	bottom : 50,
+	title : L("next"),
+	backgroundColor : "#00ffffff",
+	separatorColor  : "#00ffffff",
+}
+
+"#lblPercent" : {
+	text : "81%"
+}
+

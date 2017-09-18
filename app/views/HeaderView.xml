@@ -1,0 +1,13 @@
+<Alloy>
+	<View id="headerView" >
+		<View id="backView" >
+			<ImageView id="backImage"/>
+			<Label id="backTitle" />
+		</View>
+		<Label id="titleLabel"/>
+		<View id="rightView" >
+			<ImageView id="rightImage" />
+			<Label id="rightTitle" />
+		</View>
+	</View>
+</Alloy>

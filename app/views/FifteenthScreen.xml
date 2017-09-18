@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container" id="fifteenthScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<ScrollView id="baseView">
+			<Label id="lblSubId"></Label>
+			<TextField id="txtSubId"></TextField>
+			<View id="tvType" layout="vertical" height="Titanium.UI.SIZE" >
+				
+			</View>
+		</ScrollView>
+		<Label id="lblPercent"></Label>
+	</Window>
+</Alloy>

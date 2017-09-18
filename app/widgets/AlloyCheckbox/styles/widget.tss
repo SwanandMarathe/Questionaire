@@ -1,0 +1,9 @@
+".checkbox[platform=iphone]": {
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN
+}
+
+".checkbox": {
+    backgroundColor : 'transparent',
+    width : 35,
+    height : 35
+}

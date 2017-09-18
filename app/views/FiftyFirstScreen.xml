@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container" id="fiftyFirstScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<View id="baseView">
+			<Label id="lblSubId"></Label>
+			<View id="cweview" top="20" height="Titanium.UI.SIZE"></View>
+			<Label>\t\tAge\t\t\t\t\t\t  Gender</Label>
+			<ScrollView id="memberList" layout="vertical" showVerticalScrollIndicator="true"></ScrollView>
+		</View>
+		<Label id="lblPercent"></Label>
+	</Window>
+</Alloy>

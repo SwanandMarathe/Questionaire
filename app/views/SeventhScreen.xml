@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container" id="seventhScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<ScrollView id="baseView" left="10" right="10">
+			<Label id="lblSubId"></Label>
+			<TextField id="txtSubId"></TextField>
+			<!-- <Label id="lblcontact"></Label>
+			<TextField id="txtcontact"></TextField>
+			<Label id="lblage"></Label>
+			<TextField id="txtage"></TextField>
+			<View height="200"></View> -->
+		</ScrollView>
+		<Label id="lblPercent"></Label>
+	</Window>
+</Alloy>

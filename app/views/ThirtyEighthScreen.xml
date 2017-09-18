@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container" id="thirtyEighthScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<ScrollView id="baseView" scrollType="vertical">
+			<Label id="lblQues"></Label>
+		</ScrollView>
+		<Label id="lblPercent"></Label>
+	</Window>
+</Alloy>

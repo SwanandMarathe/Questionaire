@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container" id="fourtyFourthScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<ScrollView id="baseView" scrollType="vertical">
+			<Label class="lblSubId" id="lblColorTv"></Label>
+			<TextField class="txtSubId" id="txtColorTv"></TextField>
+			<Label class="lblSubId" id="lblMusicSys"></Label>
+			<TextField class="txtSubId" id="txtMusicSys"></TextField>
+			<Label class="lblSubId" id="lblCelingFan"></Label>
+			<TextField class="txtSubId" id="txtCelingFan"></TextField>
+			
+		</ScrollView>
+		<Label id="lblPercent"></Label>
+	</Window>
+</Alloy>
