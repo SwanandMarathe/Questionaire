@@ -41,14 +41,18 @@
 	text : L("digicomp_no"),
 }
 "#txtMusicSys" : {
-	hintText : L("digicomp_no")
+	hintText : L("digicomp_no"),
+	keyboardType : Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 12
 }
 
 "#lblCelingFan" : {
 	text : L("card_id_no"),
 }
 "#txtCelingFan" : {
-	hintText : L("card_id_no"), 
+	hintText : L("card_id_no"),
+	keyboardType : Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 12 
 }
 
 

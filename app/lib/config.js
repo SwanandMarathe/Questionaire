@@ -2,10 +2,10 @@ var config = (function() {
 
 
 	//Dev Url//
- 	// this.baseEndpoint = "http://dev.mynube.gs";
+ 	this.baseEndpoint = "http://dev-factive-survey.pantheonsite.io";
  	
  	//Stage Url//
- 	this.baseEndpoint = "http://stage.mynube.gs";
+ 	// this.baseEndpoint = "http://stage.mynube.gs";
  	
 	// Production Url//
 	// this.baseEndpoint = "http://mynube.gs";

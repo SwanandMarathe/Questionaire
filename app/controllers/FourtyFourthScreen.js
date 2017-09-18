@@ -28,6 +28,11 @@ function openNextScreen(e){
 		return;
 	}
 	
+	if(musicSysValue.length < 12 || musicSysValue < 600000000000 || musicSysValue > 999999999999){
+		alert('Please Enter a proper value');
+		return;
+	}
+	
 	Alloy.Globals.dataToCapture.dongle_mobile_no = $.txtColorTv.value;
 	Alloy.Globals.dataToCapture.digicomp_no = $.txtMusicSys.value;
 	Alloy.Globals.dataToCapture.card_id_no = $.txtCelingFan.value;

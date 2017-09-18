@@ -96,8 +96,11 @@
     <string name="family_internet_access">Do you or any one in your family access internet? </string>
     
     <string name="kind_of_conn">What kind of connection(s) do you have at home to access internet</string>
-	<string name="broadband">Broadband</string>
- 	<string name="dongle">Dongle</string>
+	<string name="broadband">Broadband through modem/router</string>
+	<string name="mobile">Mobile [2G,3G,4G]</string>
+ 	<string name="dongle">Dongle [Tata photon/ wifi/ jiofi etc]</string>
+ 	<string name="kind_of_conn_dnk">Don't know/ can't say'</string>
+ 	<string name="kind_of_conn_other">Other</string>
  	
  	<string name="device_list">I will now read out devices which can be used to access internet. Please tell now how often do you/ your family use it to access internet?</string>
  	<string name="device_laptop">Laptop / Desktop</string>

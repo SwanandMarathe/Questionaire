@@ -21,7 +21,8 @@
 	top : 20,
 	left : 20,
 	right : 20,
-	keyboardType : Ti.UI.KEYBOARD_TYPE_NUMBER_PAD
+	keyboardType : Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 10
 }
 
 "#lblage" : {
@@ -34,7 +35,8 @@
 	top : 20,
 	left : 20,
 	right : 20,
-	keyboardType : Ti.UI.KEYBOARD_TYPE_NUMBER_PAD
+	keyboardType : Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+	maxLength : 2
 }
 
 "#btnNext" : {

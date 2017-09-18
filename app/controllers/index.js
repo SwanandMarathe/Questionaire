@@ -9,3 +9,4 @@ Alloy.createController("FirstScreen").getView().open();
 // Alloy.createController("FourtyNinethScreen").getView().open();
 // Alloy.createController("EighthScreen").getView().open();
 // Alloy.createController("TwentythScreen").getView().open();
+// Alloy.createController("EighteenthScreen").getView().open();

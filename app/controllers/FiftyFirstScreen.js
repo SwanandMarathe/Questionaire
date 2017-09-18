@@ -54,7 +54,7 @@ for(var i=0;i<memberCount;i++){
 		right : 20
 	});
 	view.add(Ti.UI.createLabel({text : (i==0)?'CWE':(i==1)?'HW':i+1, color : '#000', left : 5}));
-	view.add(Ti.UI.createTextField({left:50, width : 100, keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBER_PAD, hintText : 'Age', hintTextColor : 'gray', color : '#000', borderColor:'gray', borderWidth : 1}));
+	view.add(Ti.UI.createTextField({left:50, width : 100, maxLength:2, keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBER_PAD, hintText : 'Age', hintTextColor : 'gray', color : '#000', borderColor:'gray', borderWidth : 1}));
 	
 	var radioGroup2 = radioButton.createGroup({
 		groupId:1,

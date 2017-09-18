@@ -96,8 +96,11 @@
     <string name="family_internet_access">आप या आपके घर का कोई सदस्य इंटरनेट का इस्तेमाल करता है?</string>
     
     <string name="kind_of_conn">आपके घर पर इंटरनेट के लिए किस टाइप का कनेक्शन हैं</string>
-	<string name="broadband">Broadband</string>
- 	<string name="dongle">Dongle</string>
+	<string name="broadband">Broadband through modem/router</string>
+	<string name="mobile">Mobile [2G,3G,4G]</string>
+ 	<string name="dongle">Dongle [Tata photon/ wifi/ jiofi etc]</string>
+ 	<string name="kind_of_conn_dnk">Don't know/ can't say'</string>
+ 	<string name="kind_of_conn_other">Other</string>
  	
  	<string name="device_list">अब मैं कुछ डिवाइसेस के नाम लूंगा, आपको बताना है की इनमे से किन डिवाइसेस पर आप जनरली सिनेमा, सीरियल्स, स्पोर्ट्स, न्यूज़ इत्यादि देखते हो? अगर आप देखते हैं तो ये डिवाइसेस दिन में कितनी देर (घंटे) देखना होता है</string>
  	<string name="device_laptop">Laptop / Desktop</string>

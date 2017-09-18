@@ -24,22 +24,16 @@ var baseEndpoint = config.baseEndpoint + '/api/' + config.apiVersion;
  * @param {String} _password
  * @param {Function} callback
  */
-exports.userRegistration = function(_firstname, _lastname, _dob, _username, _email, _password, _gender, callback) {
-	var endpoint = baseEndpoint + '/user_custom/custom_registration.json';
+exports.syncData = function(callback) {
+	var endpoint = baseEndpoint + '/create_survey';
 	var header_data = [];
-	_username = typeof _username !== 'undefined' ? _username : ' ';
+	var data_to_sync = Ti.App.Properties.getObject('dataToSync', []);
 	var param = {
-		'username' : _username,
-		'email' : _email,
-		'password' : _password,
-		'fname' : _firstname,
-		'lname' : _lastname,
-		'dob' : _dob,
-		'gender' : _gender
+		'data' : data_to_sync
 	};
 	Logging.printConsoleLogs('param : '+JSON.stringify(param));
 	webservice.callWebServiceJSON('POST', endpoint, param, header_data, 'json', false, function(e) {
-		Logging.printConsoleLogs('userRegistration : '+JSON.stringify(e));
+		Logging.printConsoleLogs('create_survey : '+JSON.stringify(e));
 		callback(e);
 	}, true);
 };

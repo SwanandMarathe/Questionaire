@@ -1,6 +1,9 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
+var config = require('config');
+var customWebservice = require('customWebservice');
+
 var radioButton	= require('/RadioOptions');
 var buttonBack = $.headerView.getView('backView');
 buttonBack.visible = true;
@@ -49,6 +52,27 @@ function openNextScreen(e){
 	Ti.API.info('data_to_sync1 : '+JSON.stringify(data_to_sync1));
 	Ti.App.Properties.setBool('savedFirstObj', true);
 	Ti.App.Properties.setString('userID', Alloy.Globals.dataToCapture.user_id);
+	
+	customWebservice.syncData(function(obj) {
+		if (( typeof obj === "object") && (obj !== null)) {
+			if (obj.responseCode == 0) {
+				// Ti.UI.createAlertDialog({message : L('check_internet_connection'), title : L('Alert'), buttonNames : [L('Ok')]}).show();
+			} else if(obj.responseCode == 200 && obj.responseMsg.length == 0){
+				// Ti.UI.createAlertDialog({message : L('check_network_connection'), title : L('Alert'), buttonNames : [L('Ok')]}).show();
+			} else if(obj.responseCode >= 500 && obj.responseCode < 600){
+				// Ti.UI.createAlertDialog({message : L('check_for_server_down_connection'), title : L('Alert'), buttonNames : [L('Ok')]}).show();
+			} else if (!(obj.success)) {
+				// Ti.UI.createAlertDialog({message : obj.message, title : L('Alert'), buttonNames : [L('Ok')]}).show();
+			} else {
+				Ti.App.Properties.setObject('dataToSync', []);
+				Alloy.Globals.dataToCapture = {};
+			}
+		}
+		else
+		{
+			// $.OTPScreen.remove(pgIndicator);
+		}
+	});
 	
 	Alloy.createController("FirstScreen").getView().open();
 }
