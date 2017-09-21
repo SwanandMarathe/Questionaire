@@ -33,18 +33,20 @@ widgetView.addEventListener('change',function(e){
 		return;
 	
 	var memListChildren = $.memberList.children;
-	if(e.value)
-		memListChildren[1].opacity = 0.4;
-	else
-		memListChildren[1].opacity = 1;
-		
-	for (var i=0; i < memListChildren[1].children.length; i++) {
-  		memListChildren[1].children[i].touchEnabled = !e.value;
-	};
-	for (var i=0; i < memListChildren[1].children[2].children[0].children.length; i++) {
-  		memListChildren[1].children[2].children[0].children[i].touchEnabled = !e.value;
-  		memListChildren[1].children[2].children[1].children[i].touchEnabled = !e.value;
-	};
+	if(e.value){
+		// memListChildren[1].opacity = 0.4;
+		memListChildren[1].children[0].text = 2;
+	}else{
+		// memListChildren[1].opacity = 1;
+		memListChildren[1].children[0].text = "HW";
+	}
+	// for (var i=0; i < memListChildren[1].children.length; i++) {
+  		// memListChildren[1].children[i].touchEnabled = !e.value;
+	// };
+	// for (var i=0; i < memListChildren[1].children[2].children[0].children.length; i++) {
+  		// memListChildren[1].children[2].children[0].children[i].touchEnabled = !e.value;
+  		// memListChildren[1].children[2].children[1].children[i].touchEnabled = !e.value;
+	// };
 });
 
 for(var i=0;i<memberCount;i++){
@@ -80,17 +82,17 @@ function openNextScreen(e){
 	var agemf = "";
 	
 	for(var i=0;i<memListChildren.length;i++){
-		if(i != 1 ){
+		// if(i != 1 ){
 		if((memListChildren[i].children[1].value.trim() == '' || memListChildren[i].children[1].value == "" ||
-			memListChildren[i].children[1].value < 1 || memListChildren[i].children[1].value > 99) && widget.value == false){
+			memListChildren[i].children[1].value < 1 || memListChildren[i].children[1].value > 99 || memListChildren[i].children[2].selectedSaveValue == null)){
 			return;
 		}
-		}
-		if(i != 1 ){
-		if((memListChildren[i].children[2].selectedSaveValue == null) && widget.value == false){
-			return;
-		}
-		}
+		// }
+		// if(i != 1 ){
+		// if((memListChildren[i].children[2].selectedSaveValue == null) && widget.value == false){
+			// return;
+		// }
+		// }
 		
 		agemf = agemf+"_"+(memListChildren[i].children[0].text +","+memListChildren[i].children[1].value+","+memListChildren[i].children[2].selectedSaveValue);
 	}

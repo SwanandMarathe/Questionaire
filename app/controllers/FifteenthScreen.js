@@ -34,7 +34,7 @@ buttonNext.addEventListener('click', function(e){
 // $.tvType.add(picker);
 
 $.txtSubId.addEventListener('change', function(e){
-	if(e.value.length == 0)
+	if(e.value.length == 0 || e.value == 0)
 		return;
 	$.tvType.removeAllChildren();
 	for(var i=0;i<e.value;i++){
@@ -64,7 +64,7 @@ $.txtSubId.addEventListener('change', function(e){
 
 function openNextScreen(e){
 	var subIdValue = $.txtSubId.value;
-	if(subIdValue == null || subIdValue.trim() == ""){
+	if(subIdValue == null || subIdValue.trim() == "" || subIdValue == 0){
 		return;
 	}
 	

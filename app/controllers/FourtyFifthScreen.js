@@ -1,6 +1,8 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
+var isfirstDongle = args.isfirstDongle;
+
 var radioButton	= require('/RadioOptions');
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
@@ -35,8 +37,13 @@ function openNextScreen(e){
 		return;
 	}
 	Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);
-	Alloy.Globals.dataToCapture.response_from_sms = radioGroup2.selectedSaveValue;
-	Alloy.createController("FourtySixthScreen").getView().open();
 	
+	if(isfirstDongle){
+		Alloy.Globals.dataToCapture.response_from_sms = radioGroup2.selectedSaveValue;
+		Alloy.createController("FiftyThirdScreen").getView().open();
+	}else{
+		Alloy.Globals.dataToCapture.response_from2_sms = radioGroup2.selectedSaveValue;
+		Alloy.createController("FourtySixthScreen").getView().open();
+	}
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));
 }

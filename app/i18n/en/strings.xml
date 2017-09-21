@@ -109,7 +109,7 @@
     <string name="device_tv">Television</string>
     <string name="device_other">Others</string>
      
-    <string name="often_device_usage">How often do you/ your family use it to access the internet on this device?</string>
+    <string name="often_device_usage">How often do you / your family use these devices to access internet?</string>
     <string name="use_donot">DO NOT USE</string>
     <string name="use_daily">Daily</string>
     <string name="use_onceweek">Once a week</string>
@@ -288,5 +288,8 @@
     <string name="home_activity_holiday">Go out of town for a Holiday/ Vacation or Visit Native place</string>
     <string name="home_activity_none_above">None of the Above</string>
     
+    <string name="install_another_dongle">Have you installed another dongle?</string>
+    
+    <string name="sub_id_same">Are the subscriber number the same for both the connections? If no, then note the subscriber number</string>
 
 </resources>

@@ -109,7 +109,7 @@
     <string name="device_tv">Television</string>
     <string name="device_other">Others</string>
      
-    <string name="often_device_usage">आप इन डिवाइसेस का हफ्ते में कितने बार इस्तेमाल करते हैं? </string>
+    <string name="often_device_usage">आप इन डिवाइसेस को इंटरनेट चलाने के लिए एक हफ्ते में कितने बार इस्तेमाल करते हैं ?</string>
     <string name="use_donot">DO NOT USE</string>
     <string name="use_daily">Daily</string>
     <string name="use_onceweek">Once a week</string>
@@ -287,5 +287,9 @@
     <string name="home_activity_cleaning">घर के रोज़मर्रा के काम करना</string>
     <string name="home_activity_holiday">छुट्टियों में घर के बाहर / पैतृक स्थानों पर जाना</string>
     <string name="home_activity_none_above">उपरोक्त कोई नहीं</string>
+    
+    <string name="install_another_dongle">क्या आपने एक और डोंगल इनस्टॉल किया?</string>
+    
+    <string name="sub_id_same">क्या दोनों कनेक्शंस का सब्सक्राइबर नंबर एक ही है. यदि अलग है तो दूसरा सब्सक्राइबर नंबर नोट करें</string>
 
 </resources>

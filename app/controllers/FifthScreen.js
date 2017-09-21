@@ -36,7 +36,7 @@ function openNextScreen(e){
 	Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);
 	Alloy.Globals.dataToCapture.ready_to_participate = radioGroup2.selectedSaveValue;
 	
-	if(radioGroup2.selectedValue == 1 || radioGroup2.selectedValue == 4){
+	if(radioGroup2.selectedValue == 1){
 		Alloy.createController("SixthScreen").getView().open();
 	}else if(radioGroup2.selectedValue == 0){
 		Alloy.createController("SeventhScreen").getView().open();

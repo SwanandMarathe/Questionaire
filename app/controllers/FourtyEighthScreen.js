@@ -37,6 +37,10 @@ for(var i=0; i < radioItemsValue.length; i++){
 	view.add(widgetView);
 	
 	var lbl = Ti.UI.createLabel({left : 50, text : radioItemsSaveValue[i],right : 5,color : '#000000' });
+	if(i<9){
+		lbl.color = 'red';
+		lbl.font = {fontWeight : 'bold'};
+	}
 	lbl.addEventListener('click', chklblClick);
 	widgetView.addEventListener('change', chklblClick);
 	view.add(lbl);

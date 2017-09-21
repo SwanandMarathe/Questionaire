@@ -39,7 +39,7 @@ function openNextScreen(e){
 	if(radioGroup2.selectedValue == 1){
 		Alloy.createController("FourtySixthScreen").getView().open();
 	}else{
-		Alloy.createController("FourtyFourthScreen").getView().open();
+		Alloy.createController("FourtyFourthScreen",{isfirstDongle : true}).getView().open();
 	}
 	
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));

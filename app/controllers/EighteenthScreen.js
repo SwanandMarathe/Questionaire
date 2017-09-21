@@ -87,7 +87,8 @@ function openNextScreen(e){
 		typeOfConn = L("none_above");
 	}
 	Alloy.Globals.dataToCapture.typeof_internet_connection = typeOfConn;
-	Alloy.createController("NineteenthScreen").getView().open();
+	// Alloy.createController("NineteenthScreen").getView().open();
+	Alloy.createController("TwentythScreen").getView().open();
 	
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));
 }
