@@ -1,6 +1,6 @@
 
 ".container" : {
-  exitOnClose :true
+  // exitOnClose :true
 }
 
 "#baseView" : {

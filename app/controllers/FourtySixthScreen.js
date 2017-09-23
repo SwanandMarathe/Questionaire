@@ -42,9 +42,9 @@ function openNextScreen(e){
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));
 	
 	var data_to_sync = Ti.App.Properties.getObject('dataToSync', []);
-	if(Alloy.Globals.dataToCapture.dummy_or_live != 'Dummy' && Alloy.Globals.dataToCapture.dummy_or_live != "डमी"){
+	// if(Alloy.Globals.dataToCapture.dummy_or_live != 'Dummy' && Alloy.Globals.dataToCapture.dummy_or_live != "डमी"){
 		data_to_sync.push(Alloy.Globals.dataToCapture);
-	}
+	// }
 		
 	Ti.App.Properties.setObject('dataToSync', data_to_sync);
 	
@@ -52,6 +52,10 @@ function openNextScreen(e){
 	Ti.API.info('data_to_sync1 : '+JSON.stringify(data_to_sync1));
 	Ti.App.Properties.setBool('savedFirstObj', true);
 	Ti.App.Properties.setString('userID', Alloy.Globals.dataToCapture.user_id);
+	Ti.App.Properties.setString('userName', Alloy.Globals.dataToCapture.user_name);
+	Ti.App.Properties.setString('userEmail', Alloy.Globals.dataToCapture.user_email);
+	Ti.App.Properties.setString('userMobile', Alloy.Globals.dataToCapture.user_mobile);
+	Ti.App.Properties.setString('userMarket', Alloy.Globals.dataToCapture.user_market);
 	
 	customWebservice.syncData(function(obj) {
 		if (( typeof obj === "object") && (obj !== null)) {

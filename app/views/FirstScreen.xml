@@ -1,9 +1,10 @@
 <Alloy>
 	<Window class="container" id="firstScreen" >
 		<Require src="HeaderView" id="headerView"></Require>
-		<View id="baseView">
+		<ScrollView id="baseView">
 			<!-- <Label id="lblQues"></Label> -->
-		</View>
+		</ScrollView>
+		<Button id="btnNext" onClick="openNextScreen"></Button>
 		<Label id="lblPercent"></Label>
 	</Window>
 </Alloy>

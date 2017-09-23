@@ -16,7 +16,8 @@ buttonNext.addEventListener('click', function(e){
 var radioGroup2 = radioButton.createGroup({
 	groupId:1,
 	width:150,
-	height:150,
+	setnull : true,
+	height:Ti.UI.SIZE,
 	layout:'vertical',
 	radioItemsValue:[L("house_in_slum"), L("chawl"),L("row_house"), L("independent_house"),L("house_one"), L("house_four"),L("high_rise")],
 	radioItemsSaveValue:[L("house_in_slum"), L("chawl"),L("row_house"), L("independent_house"),L("house_one"), L("house_four"),L("high_rise")],

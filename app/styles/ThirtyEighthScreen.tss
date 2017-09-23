@@ -10,8 +10,7 @@
 	bottom : 90,
 	layout : 'vertical',
 	left : 20,
-	right : 20,
-	contentWidth : '80%'
+	right : 20
 }
 
 "#lblQues" : {

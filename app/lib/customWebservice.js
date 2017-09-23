@@ -32,6 +32,7 @@ exports.syncData = function(callback) {
 		'data' : data_to_sync
 	};
 	Logging.printConsoleLogs('param : '+JSON.stringify(param));
+	Logging.printConsoleLogs('endpoint : '+endpoint);
 	webservice.callWebServiceJSON('POST', endpoint, param, header_data, 'json', false, function(e) {
 		Logging.printConsoleLogs('create_survey : '+JSON.stringify(e));
 		callback(e);

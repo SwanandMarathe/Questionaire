@@ -1,4 +1,10 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window class="container" id="fiftyFifthScreen" >
+		<Require src="HeaderView" id="headerView"></Require>
+		<ScrollView id="baseView">
+			<!-- <Label id="lblQues"></Label> -->
+		</ScrollView>
+		<Button id="btnNext" onClick="openNextScreen"></Button>
+		<Label id="lblPercent"></Label>
+	</Window>
 </Alloy>

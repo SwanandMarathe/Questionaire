@@ -16,7 +16,8 @@ buttonNext.addEventListener('click', function(e){
 var radioGroup2 = radioButton.createGroup({
 	groupId:1,
 	width:150,
-	height:150,
+	setnull : true,
+	height:Ti.UI.SIZE,
 	layout:'vertical',
 	radioItemsValue:[L("conn_timeline6"),L("conn_timeline1"),L("conn_timeline2"),L("conn_timeline3"),L("conn_timeline3p"),L("conn_timelinednk")],
 	radioItemsSaveValue:[L("conn_timeline6"),L("conn_timeline1"),L("conn_timeline2"),L("conn_timeline3"),L("conn_timeline3p"),L("conn_timelinednk")],
