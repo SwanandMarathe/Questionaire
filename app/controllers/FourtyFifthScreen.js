@@ -21,7 +21,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("response_on_sms_success"),L("response_on_sms_sry"),L("response_on_sms_not_going"),L("response_on_sms_not_server"),L("response_on_sms_digicom_invalid"),L("response_on_sms_stbusb"),L("response_on_sms_ignore")],
-	radioItemsSaveValue:[L("response_on_sms_success"),L("response_on_sms_sry"),L("response_on_sms_not_going"),L("response_on_sms_not_server"),L("response_on_sms_digicom_invalid"),L("response_on_sms_stbusb"),L("response_on_sms_ignore")],
+	radioItemsSaveValue:["response_on_sms_success", "response_on_sms_sry", "response_on_sms_not_going", "response_on_sms_not_server", "response_on_sms_digicom_invalid", "response_on_sms_stbusb", "response_on_sms_ignore"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

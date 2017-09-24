@@ -43,12 +43,10 @@ exports.createGroup = function(arg) {
             left:!isVertical?0:null,
             id:i,
         }); 
-        
         var radioItemLabel = Ti.UI.createLabel({
             width:isVertical?250:null,
             height:Ti.UI.SIZE,
             text: arg.radioItemsValue[i],
-            saveValue : arg.radioItemsSaveValue[i],
             font: {}, // Can add your own font styles
             color:'#000000',
             top:isVertical?null:5, // 5 padding between RadioBtn & Label
@@ -56,7 +54,9 @@ exports.createGroup = function(arg) {
             id:i,
             wordWrap : true
         });
-        
+        Ti.Locale.setLanguage('en');
+      	radioItemLabel.saveValue = L(arg.radioItemsSaveValue[i]),
+        Ti.Locale.setLanguage(Alloy.Globals.language);
         if(arg.font){
         	radioItemLabel.font = arg.font;
         }

@@ -14,7 +14,7 @@ buttonNext.addEventListener('click', function(e){
 });
 
 var radioItemsValue = [L("stb_type_sd"),L("stb_type_hd"),L("stb_type_hdpvr"),L("stb_type_hdtpvr"),L("stb_type_sdpvr"),L("stb_type_4k"),L("stb_type_dnk")];
-var radioItemsSaveValue = [L("stb_type_sd"),L("stb_type_hd"),L("stb_type_hdpvr"),L("stb_type_hdtpvr"),L("stb_type_sdpvr"),L("stb_type_4k"),L("stb_type_dnk")];
+var radioItemsSaveValue = ["stb_type_sd", "stb_type_hd", "stb_type_hdpvr", "stb_type_hdtpvr", "stb_type_sdpvr", "stb_type_4k", "stb_type_dnk"];
 
 // var radioGroup2 = radioButton.createGroup({
 	// groupId:1,
@@ -53,7 +53,7 @@ for(var i=0; i < radioItemsValue.length; i++){
 	widgetView.index = i;
 	view.add(widgetView);
 	
-	var lbl = Ti.UI.createLabel({left : 50, text : radioItemsSaveValue[i],right : 5,color : '#000000' });
+	var lbl = Ti.UI.createLabel({left : 50, text : radioItemsValue[i], value : radioItemsSaveValue[i], right : 5,color : '#000000' });
 	lbl.addEventListener('click', chklblClick);
 	widgetView.addEventListener('change', chklblClick);
 	view.add(lbl);
@@ -84,21 +84,28 @@ function openNextScreen(e){
 		// return;
 	// }
 	// Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);
-	
+	var goAhade = false;
 	var stb_type = "";
 	for(var j=1; j<$.baseView.children.length; j++){
 		// alert($.baseView.children[j].children[0].value);
 		if($.baseView.children[j].children[0].value == true){
-			stb_type = stb_type +", "+ $.baseView.children[j].children[1].text;
-			
+			Ti.Locale.setLanguage('en');
+			stb_type = stb_type +", "+ L($.baseView.children[j].children[1].value);
+			goAhade = true;
 			if($.baseView.children[j].children[1].text == "Don’t know/Can’t say" || $.baseView.children[j].children[1].text == "पता नहीं/ बता नहीं सकते"){
-				stb_type = $.baseView.children[j].children[1].text;
+				stb_type = L($.baseView.children[j].children[1].value);
 			}
+			Ti.Locale.setLanguage(Alloy.Globals.language);
 		}
 	}
-	
+	if(!goAhade){
+		alert('Please select at-least 1 option');
+		return;
+	}
 	if(stb_type == ""){
+		Ti.Locale.setLanguage('en');
 		stb_type = L("stb_type_dnk");
+		Ti.Locale.setLanguage(Alloy.Globals.language);
 	}
 	
 	Alloy.Globals.dataToCapture.stb_type = stb_type;

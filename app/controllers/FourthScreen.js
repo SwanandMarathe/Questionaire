@@ -20,7 +20,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:Ti.UI.SIZE,
 	layout:'vertical',
 	radioItemsValue:[L("house_in_slum"), L("chawl"),L("row_house"), L("independent_house"),L("house_one"), L("house_four"),L("high_rise")],
-	radioItemsSaveValue:[L("house_in_slum"), L("chawl"),L("row_house"), L("independent_house"),L("house_one"), L("house_four"),L("high_rise")],
+	radioItemsSaveValue:["house_in_slum", "chawl", "row_house", "independent_house", "house_one", "house_four", "high_rise"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

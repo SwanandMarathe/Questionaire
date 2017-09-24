@@ -20,7 +20,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("tatasky_bumper"),L("tatasky_dham_kid"),L("tatasky_dham_mix"),L("tatasky_dhoom"),L("tatasky_99"),L("tatasky_souspl"),L("tatasky_sospspl"),L("tatasky_ultra"),L("tatasky_other")],
-	radioItemsSaveValue:[L("tatasky_bumper"),L("tatasky_dham_kid"),L("tatasky_dham_mix"),L("tatasky_dhoom"),L("tatasky_99"),L("tatasky_souspl"),L("tatasky_sospspl"),L("tatasky_ultra"),L("tatasky_other")],
+	radioItemsSaveValue:["tatasky_bumper", "tatasky_dham_kid", "tatasky_dham_mix", "tatasky_dhoom", "tatasky_99", "tatasky_souspl", "tatasky_sospspl", "tatasky_ultra", "tatasky_other"],
 	radioItemsPadding:10,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

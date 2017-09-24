@@ -19,7 +19,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("no_not_access"),L("yes_i_do")],
-	radioItemsSaveValue:[L("no_not_access"),L("yes_i_do")],
+	radioItemsSaveValue:["no_not_access", "yes_i_do"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

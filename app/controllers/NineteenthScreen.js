@@ -19,7 +19,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("device_laptop"),L("device_mobile"),L("device_tablet"),L("device_tv"),L("device_other")],
-	radioItemsSaveValue:[L("device_laptop"),L("device_mobile"),L("device_tablet"),L("device_tv"),L("device_other")],
+	radioItemsSaveValue:["device_laptop", "device_mobile", "device_tablet", "device_tv", "device_other"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

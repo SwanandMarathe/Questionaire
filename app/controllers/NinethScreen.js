@@ -19,7 +19,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("respondent_service"),L("respondent_business")],
-	radioItemsSaveValue:[L("respondent_service"),L("respondent_business")],
+	radioItemsSaveValue:["respondent_service", "respondent_business"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

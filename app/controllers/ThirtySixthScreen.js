@@ -20,7 +20,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("subs_cost150"),L("subs_cost300"),L("subs_cost600"),L("subs_cost750"),L("subs_cost900"),L("subs_cost900p"),L("subs_cost_dnk")],
-	radioItemsSaveValue:[L("subs_cost150"),L("subs_cost300"),L("subs_cost600"),L("subs_cost750"),L("subs_cost900"),L("subs_cost900p"),L("subs_cost_dnk")],
+	radioItemsSaveValue:["subs_cost150", "subs_cost300", "subs_cost600", "subs_cost750", "subs_cost900", "subs_cost900p", "subs_cost_dnk"],
 	radioItemsPadding:10,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

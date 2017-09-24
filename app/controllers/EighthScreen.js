@@ -20,7 +20,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:Ti.UI.SIZE,
 	layout:'vertical',
 	radioItemsValue:[L("illiterate"),L("literate"),L("school_five"),L("school_ssc"),L("school_diploma"),L("school_graduate"),L("school_post_graduate")],
-	radioItemsSaveValue:[L("illiterate"),L("literate"),L("school_five"),L("school_ssc"),L("school_diploma"),L("school_graduate"),L("school_post_graduate")],
+	radioItemsSaveValue:["illiterate", "literate", "school_five", "school_ssc", "school_diploma", "school_graduate", "school_post_graduate"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

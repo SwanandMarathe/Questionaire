@@ -20,7 +20,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:Ti.UI.SIZE,
 	layout:'vertical',
 	radioItemsValue:[L("conn_timeline6"),L("conn_timeline1"),L("conn_timeline2"),L("conn_timeline3"),L("conn_timeline3p"),L("conn_timelinednk")],
-	radioItemsSaveValue:[L("conn_timeline6"),L("conn_timeline1"),L("conn_timeline2"),L("conn_timeline3"),L("conn_timeline3p"),L("conn_timelinednk")],
+	radioItemsSaveValue:["conn_timeline6", "conn_timeline1", "conn_timeline2", "conn_timeline3", "conn_timeline3p", "conn_timelinednk"],
 	radioItemsPadding:10,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

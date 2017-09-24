@@ -14,7 +14,7 @@ buttonNext.addEventListener('click', function(e){
 });
 
 var radioItemsValue = [L("home_activity_restautant"),L("home_activity_drink"),L("home_activity_shopping"),L("home_activity_gym"),L("home_activity_library"),L("home_activity_dayout"),L("home_activity_concert"),L("home_activity_party"),L("home_activity_child"),L("home_activity_cleaning"),L("home_activity_holiday"),L("home_activity_none_above")];
-var radioItemsSaveValue = [L("home_activity_restautant"),L("home_activity_drink"),L("home_activity_shopping"),L("home_activity_gym"),L("home_activity_library"),L("home_activity_dayout"),L("home_activity_concert"),L("home_activity_party"),L("home_activity_child"),L("home_activity_cleaning"),L("home_activity_holiday"),L("home_activity_none_above")];
+var radioItemsSaveValue = ["home_activity_restautant", "home_activity_drink", "home_activity_shopping", "home_activity_gym", "home_activity_library", "home_activity_dayout", "home_activity_concert", "home_activity_party", "home_activity_child", "home_activity_cleaning", "home_activity_holiday", "home_activity_none_above"];
 
 for(var i=0; i < radioItemsValue.length; i++){
 	var view = Ti.UI.createView({
@@ -36,7 +36,7 @@ for(var i=0; i < radioItemsValue.length; i++){
 	widgetView.index = i;
 	view.add(widgetView);
 	
-	var lbl = Ti.UI.createLabel({left : 50, text : radioItemsSaveValue[i],right : 5,color : '#000000' });
+	var lbl = Ti.UI.createLabel({left : 50, text : radioItemsValue[i], value : radioItemsSaveValue[i],right : 5,color : '#000000' });
 	lbl.addEventListener('click', chklblClick); 
 	widgetView.addEventListener('change', chklblClick);
 	view.add(lbl);
@@ -65,19 +65,26 @@ function chklblClick(e){
 
 function openNextScreen(e){
 	var listOfAppliances = "";
+	var goAhade = false;
 	for(var j=1; j<$.baseView.children.length; j++){
 		// alert($.baseView.children[j].children[0].value);
 		if($.baseView.children[j].children[0].value == true){
-			listOfAppliances = listOfAppliances +", "+ $.baseView.children[j].children[1].text;
-			
+			Ti.Locale.setLanguage('en');
+			listOfAppliances = listOfAppliances +", "+ L($.baseView.children[j].children[1].value);
+			goAhade = true;
 			if($.baseView.children[j].children[1].text == "None of the Above" || $.baseView.children[j].children[1].text == "उपरोक्त कोई नहीं"){
-				listOfAppliances = $.baseView.children[j].children[1].text;
+				listOfAppliances = L($.baseView.children[j].children[1].value);
 			}
 		}
 	}
-	
+	if(!goAhade){
+		alert('Please select at-least 1 option');
+		return;
+	}
 	if(listOfAppliances == ""){
+		Ti.Locale.setLanguage('en');
 		listOfAppliances = L("none_above");
+		Ti.Locale.setLanguage(Alloy.Globals.language);
 	}
 	// alert(listOfAppliances);
 	// Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);

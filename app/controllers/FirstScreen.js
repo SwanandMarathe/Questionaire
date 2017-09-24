@@ -2,6 +2,7 @@
 var args = $.args;
 var savedFirstObj = Ti.App.Properties.getBool('savedFirstObj', false);
 var radioButton	= require('/RadioOptions');
+var moment = require('alloy/moment');
 
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
@@ -152,7 +153,7 @@ if(savedFirstObj == true){
 	txtUserMobile.text = Ti.App.Properties.getString('userMobile', "");
 	txtUserMarket.text = Ti.App.Properties.getString('userMarket', "");
 	var lang = Ti.App.Properties.getString('selectedLanguage', "en");
-	txtUserLanguage.text = (lang == 'en') ? "English" : 'हिन्दी';
+	txtUserLanguage.text = (lang == 'en') ? "English" : 'Hindi';
 }else{
 	txtUserId.text = Alloy.Globals.dataToCapture.user_id;
 	txtUserName.text = Alloy.Globals.dataToCapture.user_name;
@@ -202,6 +203,9 @@ function openNextScreen(e){
 	Alloy.Globals.dataToCapture.user_mobile = userMobileValue;
 	Alloy.Globals.dataToCapture.user_market = userMarketValue;
 	// Ti.App.Properties.setString('userID', userIdValue);
+	
+	Alloy.Globals.dataToCapture.start_timestamp = moment().unix();
+	
 	Alloy.createController("SecondScreen").getView().open();
 	
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));

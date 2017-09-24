@@ -42,12 +42,13 @@ for(var i=0;i<options.length;i++){
 function openNextScreen(e){
 	
 	var hourSpend = "";
-	
+	// var goAhade = false;
 	for (var i=1; i < $.baseView.children.length; i++) {
-		if($.baseView.children[i].children[1].value > 23)
+		if($.baseView.children[i].children[1].value == null || $.baseView.children[i].children[1].value == "" || 
+			$.baseView.children[i].children[1].value.trim() == "" || $.baseView.children[i].children[1].value > 23)
 			return;
 	};
-	
+	// goAhade = true;
 	for (var i=1; i < $.baseView.children.length; i++) {
 		hourSpend = hourSpend+','+$.baseView.children[i].children[0].text+':'+$.baseView.children[i].children[1].value;
 	};

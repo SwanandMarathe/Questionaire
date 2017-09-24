@@ -18,7 +18,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("respondent_yes"),L("respondent_no"),L("digicom_invalid"),L("stb_not_working"),L("more_conn"),L("respondent_refuse")],
-	radioItemsSaveValue:[L("respondent_yes"),L("respondent_no"),L("digicom_invalid"),L("stb_not_working"),L("more_conn"),L("respondent_refuse")],
+	radioItemsSaveValue:["respondent_yes", "respondent_no", "digicom_invalid", "stb_not_working", "more_conn", "respondent_refuse"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',

@@ -19,7 +19,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("dummy"), L("live")],
-	radioItemsSaveValue:[L("dummy"), L("live")],
+	radioItemsSaveValue:["dummy", "live"],
 	radioItemsPadding:20,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',
@@ -34,8 +34,10 @@ function openNextScreen(e){
 	if(radioGroup2.selectedValue == null){
 		return;
 	}
+	// Ti.Locale.setLanguage('en');
 	Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);
 	Alloy.Globals.dataToCapture.dummy_or_live = radioGroup2.selectedSaveValue;
+	// Ti.Locale.setLanguage(Alloy.Globals.language);
 	Alloy.createController("ThirdScreen").getView().open();
 	
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));

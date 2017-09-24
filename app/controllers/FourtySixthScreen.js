@@ -3,6 +3,7 @@ var args = $.args;
 
 var config = require('config');
 var customWebservice = require('customWebservice');
+var moment = require('alloy/moment');
 
 var radioButton	= require('/RadioOptions');
 var buttonBack = $.headerView.getView('backView');
@@ -38,7 +39,7 @@ function openNextScreen(e){
 	// Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);
 	Alloy.Globals.dataToCapture.conclusion_screen = 'yes';
 	// Alloy.createController("FourtySixthScreen").getView().open();
-	
+	Alloy.Globals.dataToCapture.end_timestamp = moment().unix();
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));
 	
 	var data_to_sync = Ti.App.Properties.getObject('dataToSync', []);

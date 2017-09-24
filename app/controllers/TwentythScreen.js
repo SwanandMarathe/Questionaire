@@ -49,13 +49,14 @@ for(var i=0;i<options.length;i++){
 		// layout : 'horizontal',
 	});
 	var data = [];
-	data[0]=Ti.UI.createPickerRow({title:'Do not use', width : 50, color : '#fff'});
-	data[1]=Ti.UI.createPickerRow({title:'Daily', width : 50, color : '#fff'});
-	data[2]=Ti.UI.createPickerRow({title:'Twice a week', width : 50, color : '#fff'});
-	data[3]=Ti.UI.createPickerRow({title:'Once a week', width : 50, color : '#fff'});
-	data[4]=Ti.UI.createPickerRow({title:'Once a fortnight', width : 50, color : '#fff'});
-	data[5]=Ti.UI.createPickerRow({title:'Once a month', width : 50, color : '#fff'});
-	data[6]=Ti.UI.createPickerRow({title:'Less Frequent', width : 50, color : '#fff'});
+	data[0]=Ti.UI.createPickerRow({title:'Select', width : 50, color : '#fff'});
+	data[1]=Ti.UI.createPickerRow({title:'Do not use', width : 50, color : '#fff'});
+	data[2]=Ti.UI.createPickerRow({title:'Daily', width : 50, color : '#fff'});
+	data[3]=Ti.UI.createPickerRow({title:'Twice a week', width : 50, color : '#fff'});
+	data[4]=Ti.UI.createPickerRow({title:'Once a week', width : 50, color : '#fff'});
+	data[5]=Ti.UI.createPickerRow({title:'Once a fortnight', width : 50, color : '#fff'});
+	data[6]=Ti.UI.createPickerRow({title:'Once a month', width : 50, color : '#fff'});
+	data[7]=Ti.UI.createPickerRow({title:'Less Frequent', width : 50, color : '#fff'});
 	picker.add(data);
 	picker.selectionIndicator = true;
 	view.add(picker);
@@ -71,6 +72,10 @@ function openNextScreen(e){
 	var hourSpend = "";
 	
 	for (var i=1; i < $.baseView.children.length; i++) {
+		if($.baseView.children[i].children[1].getSelectedRow(0).title == 'Select'){
+			alert('Please select a value');
+			return;
+		}
 		hourSpend = hourSpend+','+$.baseView.children[i].children[0].text+':'+$.baseView.children[i].children[1].getSelectedRow(0).title;
 	};
 	

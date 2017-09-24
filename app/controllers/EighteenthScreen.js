@@ -14,7 +14,7 @@ buttonNext.addEventListener('click', function(e){
 });
 
 var radioItemsValue = [L("broadband"),L("mobile"),L("dongle"),L("kind_of_conn_dnk"),L("kind_of_conn_other")];
-var radioItemsSaveValue = [L("broadband"),L("mobile"),L("dongle"),L("kind_of_conn_dnk"),L("kind_of_conn_other")];
+var radioItemsSaveValue = ["broadband", "mobile", "dongle", "kind_of_conn_dnk", "kind_of_conn_other"];
 
 for(var i=0; i < radioItemsValue.length; i++){
 	var view = Ti.UI.createView({
@@ -36,7 +36,7 @@ for(var i=0; i < radioItemsValue.length; i++){
 	widgetView.index = i;
 	view.add(widgetView);
 	
-	var lbl = Ti.UI.createLabel({left : 50, text : radioItemsSaveValue[i],right : 5,color : '#000000' });
+	var lbl = Ti.UI.createLabel({left : 50, text : radioItemsValue[i], value : radioItemsSaveValue[i],right : 5,color : '#000000' });
 	lbl.addEventListener('click', chklblClick);
 	widgetView.addEventListener('change', chklblClick);
 	view.add(lbl);
@@ -73,19 +73,27 @@ function chklblClick(e){
 
 function openNextScreen(e){
 	var typeOfConn = "";
+	var goAhade = false;
+	Ti.Locale.setLanguage('en');
 	for(var j=1; j<$.baseView.children.length-1; j++){
 		// alert($.baseView.children[j].children[0].value);
 		if($.baseView.children[j].children[0].value == true){
-			typeOfConn = typeOfConn +", "+ $.baseView.children[j].children[1].text;
-			
+			typeOfConn = typeOfConn +", "+ L($.baseView.children[j].children[1].value);
+			goAhade = true;
 			if($.baseView.children[j].children[1].text == "Other"){
 				typeOfConn = typeOfConn +", "+ txtFieldOther.value;
 			}
 		}
 	}
-	
+	Ti.Locale.setLanguage(Alloy.Globals.language);
+	if(!goAhade){
+		alert('Please select at-least 1 option');
+		return;
+	}
 	if(typeOfConn == ""){
+		Ti.Locale.setLanguage('en');
 		typeOfConn = L("none_above");
+		Ti.Locale.setLanguage(Alloy.Globals.language);
 	}
 	Alloy.Globals.dataToCapture.typeof_internet_connection = typeOfConn;
 	// Alloy.createController("NineteenthScreen").getView().open();

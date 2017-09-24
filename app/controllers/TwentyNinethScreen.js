@@ -19,7 +19,7 @@ var radioGroup2 = radioButton.createGroup({
 	height:150,
 	layout:'vertical',
 	radioItemsValue:[L("tv_consump_weekday_off"),L("tv_consump_weekday_half"),L("tv_consump_weekday_one"),L("tv_consump_weekday_two"),L("tv_consump_weekday_five"),L("tv_consump_weekday_nine"),L("tv_consump_weekday_eleven"),L("tv_consump_weekday_elevenplus")],
-	radioItemsSaveValue:[L("tv_consump_weekday_off"),L("tv_consump_weekday_half"),L("tv_consump_weekday_one"),L("tv_consump_weekday_two"),L("tv_consump_weekday_five"),L("tv_consump_weekday_nine"),L("tv_consump_weekday_eleven"),L("tv_consump_weekday_elevenplus")],
+	radioItemsSaveValue:["tv_consump_weekday_off", "tv_consump_weekday_half", "tv_consump_weekday_one", "tv_consump_weekday_two", "tv_consump_weekday_five", "tv_consump_weekday_nine", "tv_consump_weekday_eleven", "tv_consump_weekday_elevenplus"],
 	radioItemsPadding:10,
 	radioItemsBackgroundSelectedImage:'/radioImages/radio_button_on.png',
 	radioItemsBackgroundImage:'/radioImages/radio_button_off.png',
