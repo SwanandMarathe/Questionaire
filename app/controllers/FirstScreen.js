@@ -196,7 +196,7 @@ function openNextScreen(e){
 		// Ti.Locale.setLanguage('hi');
 	// }
 	// Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);
-	Alloy.Globals.dataToCapture.language = userLang;
+	Alloy.Globals.dataToCapture.language = txtUserLanguage.text;
 	Alloy.Globals.dataToCapture.user_id = userIdValue;
 	Alloy.Globals.dataToCapture.user_name = userNameValue;
 	Alloy.Globals.dataToCapture.user_email = userEmailValue;
