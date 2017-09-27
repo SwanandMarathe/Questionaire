@@ -94,7 +94,7 @@
     
     <string name="family_member_count">आपको मिलाकर, आपके परिवार में कितने सदस्य हैं? (परिवार का मतलब उन सभी लोगों से है जो अभी आपके घर में रहते हों और घर के कॉमन रसोई का खाना खाते हों. कृपया नौकरों और काम वाली बाइयों को ना गिने).</string>
     
-    <string name="family_member_list">Plase mention the age and gender of the family member starting with house wife and chief wage earner and then the youngest to oldest \n if chief wage earner is house wife click here -</string>
+    <string name="family_member_list">कृपया परिवार के प्रत्येक सदस्यों की उम्र और जेंडर (लिंग) बताएं. घर के मुखिया से शुरू करें फिर ग्रहणी के बारे में बताएं, उसके बाद घर के प्रत्येक सदस्य के बारे में बताएं अगर घर का मुखिया और ग्रहणी एक ही हों तो यहाँ टिक करें -</string>
     
     <string name="family_internet_access">आप या आपके घर का कोई सदस्य इंटरनेट का इस्तेमाल करता है?</string>
     
@@ -113,13 +113,14 @@
     <string name="device_other">Others</string>
      
     <string name="often_device_usage">आप इन डिवाइसेस को इंटरनेट चलाने के लिए एक हफ्ते में कितने बार इस्तेमाल करते हैं ?</string>
-    <string name="use_donot">DO NOT USE</string>
-    <string name="use_daily">Daily</string>
-    <string name="use_onceweek">Once a week</string>
-    <string name="use_oncefort">Once a fortnight</string>
-    <string name="use_oncemonth">Once a month</string>
-    <string name="use_less_frequent">Less frequent</string>
-    <string name="use_twice_week">Twice a week</string>
+    <string name="use_select">Select</string>
+    <string name="use_donot">इस्तेमाल नहीं करते</string>
+    <string name="use_daily">रोज इस्तेमाल करते हैं</string>
+    <string name="use_onceweek">हफ्ते में एक बार</string>
+    <string name="use_twice_week">हफ्ते में दो बार</string>
+    <string name="use_oncefort">१५ दिनों में एक बार</string>
+    <string name="use_oncemonth">महीने में एक बार</string>
+    <string name="use_less_frequent">कभी कभी</string>
      
     <string name="instrument_name_lbl">अब मैं कुछ डिवाइसेस के नाम लूंगा, आपको बताना है की इनमे से किन डिवाइसेस पर आप जनरली सिनेमा, सीरियल्स, स्पोर्ट्स, न्यूज़ इत्यादि देखते हो? अगर आप देखते हैं तो ये डिवाइसेस दिन में कितनी देर (घंटे) देखना होता है</string>
     <string name="on_telev">Television टीवी पर</string>

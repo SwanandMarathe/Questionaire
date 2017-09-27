@@ -113,13 +113,14 @@
     <string name="device_other">Others</string>
      
     <string name="often_device_usage">How often do you / your family use these devices to access internet?</string>
-    <string name="use_donot">DO NOT USE</string>
+    <string name="use_select">Select</string>
+    <string name="use_donot">Do not use</string>
     <string name="use_daily">Daily</string>
     <string name="use_onceweek">Once a week</string>
+    <string name="use_twice_week">Twice a week</string>
     <string name="use_oncefort">Once a fortnight</string>
     <string name="use_oncemonth">Once a month</string>
     <string name="use_less_frequent">Less frequent</string>
-    <string name="use_twice_week">Twice a week</string>
      
     <string name="instrument_name_lbl">I will read out the devices, can you please tell me, from which devices/instruments you generally watch movies, daily soaps, program, sports etc.? </string>
     <string name="on_telev">On Television</string>

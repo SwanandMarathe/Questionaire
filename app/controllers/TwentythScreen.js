@@ -51,14 +51,14 @@ for(var i=0;i<options.length;i++){
 		// layout : 'horizontal',
 	});
 	var data = [];
-	data[0]=Ti.UI.createPickerRow({title:'Select', width : 50, color : '#fff'});
-	data[1]=Ti.UI.createPickerRow({title:'Do not use', width : 50, color : '#fff'});
-	data[2]=Ti.UI.createPickerRow({title:'Daily', width : 50, color : '#fff'});
-	data[3]=Ti.UI.createPickerRow({title:'Twice a week', width : 50, color : '#fff'});
-	data[4]=Ti.UI.createPickerRow({title:'Once a week', width : 50, color : '#fff'});
-	data[5]=Ti.UI.createPickerRow({title:'Once a fortnight', width : 50, color : '#fff'});
-	data[6]=Ti.UI.createPickerRow({title:'Once a month', width : 50, color : '#fff'});
-	data[7]=Ti.UI.createPickerRow({title:'Less Frequent', width : 50, color : '#fff'});
+	data[0]=Ti.UI.createPickerRow({title:L('use_select'), value : 'use_select', width : 50, color : '#fff'});
+	data[1]=Ti.UI.createPickerRow({title:L("use_donot"), value : "use_donot",width : 50, color : '#fff'});
+	data[2]=Ti.UI.createPickerRow({title:L("use_daily"), value : "use_daily",  width : 50, color : '#fff'});
+	data[3]=Ti.UI.createPickerRow({title:L("use_onceweek"), value : "use_onceweek", width : 50, color : '#fff'});
+	data[4]=Ti.UI.createPickerRow({title:L("use_twice_week"), value : "use_twice_week", width : 50, color : '#fff'});
+	data[5]=Ti.UI.createPickerRow({title:L("use_oncefort"), value : "use_oncefort", width : 50, color : '#fff'});
+	data[6]=Ti.UI.createPickerRow({title:L("use_oncemonth"), value : "use_oncemonth", width : 50, color : '#fff'});
+	data[7]=Ti.UI.createPickerRow({title:L("use_less_frequent"), value : "use_less_frequent", width : 50, color : '#fff'});
 	picker.add(data);
 	picker.selectionIndicator = true;
 	view.add(picker);
@@ -78,7 +78,7 @@ function openNextScreen(e){
 			alert('Please select a value');
 			return;
 		}
-		hourSpend = hourSpend+','+$.baseView.children[i].children[0].text+':'+$.baseView.children[i].children[1].getSelectedRow(0).title;
+		hourSpend = hourSpend+','+$.baseView.children[i].children[0].text+':'+L($.baseView.children[i].children[1].getSelectedRow(0).value);
 	};
 	
 	Alloy.Globals.dataToCapture.internet_usage = hourSpend;//radioGroup2.selectedSaveValue;

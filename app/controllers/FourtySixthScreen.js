@@ -83,7 +83,7 @@ function openNextScreen(e){
 	
 	for(i=0;i<Alloy.Globals.windowStack.length;i++)
 	{
-		Ti.API.info(""+Alloy.Globals.windowStack.length);
+		// Ti.API.info(""+Alloy.Globals.windowStack.length);
 		Alloy.Globals.windowStack[i].close();
 		// Logging.printConsoleLogs("screens"+Alloy.Globals.windowStack[i]);
 	}

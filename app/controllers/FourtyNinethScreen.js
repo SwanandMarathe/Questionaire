@@ -77,6 +77,7 @@ function openNextScreen(e){
 			if($.baseView.children[j].children[1].text == "None of the Above" || $.baseView.children[j].children[1].text == "उपरोक्त कोई नहीं"){
 				listOfAppliances = L($.baseView.children[j].children[1].value);
 			}
+			Ti.Locale.setLanguage(Alloy.Globals.language);
 		}
 	}
 	if(!goAhade){
@@ -89,8 +90,9 @@ function openNextScreen(e){
 		Ti.Locale.setLanguage(Alloy.Globals.language);
 	}
 	// alert(listOfAppliances);
+	Ti.Locale.setLanguage(Alloy.Globals.language);
 	// Ti.API.info(radioGroup2.selectedIndex + " Vertical radioGroup selectedIdx: " + radioGroup2.selectedValue);
-	Alloy.Globals.dataToCapture.list_of_allpiances = listOfAppliances;
+	Alloy.Globals.dataToCapture.home_activity = listOfAppliances;
 	Alloy.createController("SeventeenthScreen").getView().open();
 	
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));
