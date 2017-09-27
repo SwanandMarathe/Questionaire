@@ -1,6 +1,8 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
+Alloy.Globals.windowStack.push($.fiftyFirstScreen);
+
 var memberCount = Alloy.Globals.dataToCapture.no_of_familymember;
 if(memberCount > 9)
 	memberCount = 9;

@@ -1,6 +1,8 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
+Alloy.Globals.windowStack.push($.fiftyFourthScreen);
+
 var radioButton	= require('/RadioOptions');
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
@@ -60,7 +62,8 @@ function openNextScreen(e){
 	Alloy.Globals.dataToCapture.is_sub_id_same = radioGroup2.selectedSaveValue;
 	// Alloy.createController("FourtySixthScreen").getView().open();
 	if(radioGroup2.selectedValue == 0){
-		Alloy.createController("FourtySixthScreen").getView().open();
+		// Alloy.createController("FourtySixthScreen").getView().open();
+		Alloy.createController("FourtyFourthScreen",{isfirstDongle : false}).getView().open();
 	}else{
 		
 		var subIdValue = subTxt.value;

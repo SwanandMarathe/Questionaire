@@ -1,6 +1,8 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
+// Alloy.Globals.windowStack.push($.fourtySixthScreen);
+
 var config = require('config');
 var customWebservice = require('customWebservice');
 var moment = require('alloy/moment');
@@ -79,5 +81,14 @@ function openNextScreen(e){
 		}
 	});
 	
-	Alloy.createController("FirstScreen").getView().open();
+	for(i=0;i<Alloy.Globals.windowStack.length;i++)
+	{
+		Ti.API.info(""+Alloy.Globals.windowStack.length);
+		Alloy.Globals.windowStack[i].close();
+		// Logging.printConsoleLogs("screens"+Alloy.Globals.windowStack[i]);
+	}
+	Alloy.Globals.windowStack = [];
+	$.fourtySixthScreen.close(); 
+	
+	// Alloy.createController("FirstScreen").getView().open();
 }

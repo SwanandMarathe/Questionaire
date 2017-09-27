@@ -1,6 +1,8 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
+Alloy.Globals.windowStack.push($.fourtyFifthScreen);
+
 var isfirstDongle = args.isfirstDongle;
 
 var radioButton	= require('/RadioOptions');

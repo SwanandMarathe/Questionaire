@@ -3,6 +3,8 @@ var args = $.args;
 $.thirtyNinethScreen.windowSoftInputMode = Titanium.UI.Android.SOFT_INPUT_STATE_VISIBLE;
 setTimeout(function(){$.txtColorTv.focus();},100);
 
+Alloy.Globals.windowStack.push($.thirtyNinethScreen);
+
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
 	$.thirtyNinethScreen.close();	

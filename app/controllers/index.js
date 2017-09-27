@@ -23,3 +23,4 @@ if(savedFirstObj){
 // Alloy.createController("FourtyNinethScreen").getView().open();
 // Alloy.createController("EighteenthScreen").getView().open();
 // Alloy.createController("TwentyFirstScreen").getView().open();
+// Alloy.createController("FiftyFourthScreen").getView().open();

@@ -3,7 +3,7 @@ var args = $.args;
 var savedFirstObj = Ti.App.Properties.getBool('savedFirstObj', false);
 var radioButton	= require('/RadioOptions');
 var moment = require('alloy/moment');
-
+// Alloy.Globals.windowStack.push($.firstScreen);
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
 	$.firstScreen.close();	

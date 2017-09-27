@@ -1,6 +1,8 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
+Alloy.Globals.windowStack.push($.twentyFifthScreen);
+
 var radioButton	= require('/RadioOptions');
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){

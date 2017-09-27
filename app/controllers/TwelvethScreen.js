@@ -3,6 +3,8 @@ var args = $.args;
 $.twelvethScreen.windowSoftInputMode = Titanium.UI.Android.SOFT_INPUT_STATE_VISIBLE;
 setTimeout(function(){$.txtSubId.focus();},100);
 
+Alloy.Globals.windowStack.push($.twelvethScreen);
+
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
 	$.twelvethScreen.close();	

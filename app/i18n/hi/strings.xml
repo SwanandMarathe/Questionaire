@@ -7,6 +7,9 @@
     <string name="next"> Next </string>
     <string name="start">Start</string>
     
+    <string name="M">M</string>
+    <string name="F">F</string>
+    
 	<string name="language_selector">Please Select a Language</string>
 	
     <string name="dummyOrLive">क्या यह प्रैक्टिस करने के लिए Dummy सर्वे है या रेस्पोंडेंट के साथ Live सर्वे है?</string>

@@ -15,6 +15,8 @@ var language = Ti.App.Properties.getString('selectedLanguage','en');
 Alloy.Globals.language = language;
 Ti.Locale.setLanguage(language);
 
+Alloy.Globals.windowStack = [];
+
 Alloy.Globals.dataToCapture = {};
 
 var savedFirstObj = Ti.App.Properties.getBool('savedFirstObj', false);

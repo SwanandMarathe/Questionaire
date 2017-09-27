@@ -3,6 +3,8 @@ var args = $.args;
 $.fourtySecondScreen.windowSoftInputMode = Titanium.UI.Android.SOFT_INPUT_STATE_VISIBLE;
 setTimeout(function(){$.txtColorTv.focus();},100);
 
+Alloy.Globals.windowStack.push($.fourtySecondScreen);
+
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
 	$.fourtySecondScreen.close();	

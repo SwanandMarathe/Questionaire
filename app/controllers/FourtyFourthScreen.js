@@ -6,6 +6,8 @@ var isfirstDongle = args.isfirstDongle;
 $.fourtyFourthScreen.windowSoftInputMode = Titanium.UI.Android.SOFT_INPUT_STATE_VISIBLE;
 setTimeout(function(){$.txtColorTv.focus();},100);
 
+Alloy.Globals.windowStack.push($.fourtyFourthScreen);
+
 var buttonBack = $.headerView.getView('backView');
 buttonBack.addEventListener('click', function(e){
 	$.fourtyFourthScreen.close();	
