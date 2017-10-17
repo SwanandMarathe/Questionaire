@@ -146,7 +146,7 @@ $.baseView.add(txtFieldBase);
 // $.baseView.add(lblQues);
 // $.baseView.add(radioGroup2);
 
-if(savedFirstObj == true){
+// if(savedFirstObj == true){
 	txtUserId.text = Ti.App.Properties.getString('userID', "");
 	txtUserName.text = Ti.App.Properties.getString('userName', "");
 	txtUserEmail.text = Ti.App.Properties.getString('userEmail', "");
@@ -154,14 +154,14 @@ if(savedFirstObj == true){
 	txtUserMarket.text = Ti.App.Properties.getString('userMarket', "");
 	var lang = Ti.App.Properties.getString('selectedLanguage', "en");
 	txtUserLanguage.text = (lang == 'en') ? "English" : 'Hindi';
-}else{
-	txtUserId.text = Alloy.Globals.dataToCapture.user_id;
-	txtUserName.text = Alloy.Globals.dataToCapture.user_name;
-	txtUserEmail.text = Alloy.Globals.dataToCapture.user_email;
-	txtUserMobile.text = Alloy.Globals.dataToCapture.user_mobile;
-	txtUserMarket.text = Alloy.Globals.dataToCapture.user_market;
-	txtUserLanguage.text = Alloy.Globals.dataToCapture.language;
-}
+// }else{
+	// txtUserId.text = Alloy.Globals.dataToCapture.user_id;
+	// txtUserName.text = Alloy.Globals.dataToCapture.user_name;
+	// txtUserEmail.text = Alloy.Globals.dataToCapture.user_email;
+	// txtUserMobile.text = Alloy.Globals.dataToCapture.user_mobile;
+	// txtUserMarket.text = Alloy.Globals.dataToCapture.user_market;
+	// txtUserLanguage.text = Alloy.Globals.dataToCapture.language;
+// }
 
 function openNextScreen(e){
 	var userIdValue = txtUserId.text;

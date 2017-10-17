@@ -159,6 +159,12 @@ function openNextScreen(e){
 	Alloy.Globals.dataToCapture.user_market = userMarketValue;
 	// Ti.App.Properties.setString('userID', userIdValue);
 	
+	Ti.App.Properties.setString('userID', Alloy.Globals.dataToCapture.user_id);
+	Ti.App.Properties.setString('userName', Alloy.Globals.dataToCapture.user_name);
+	Ti.App.Properties.setString('userEmail', Alloy.Globals.dataToCapture.user_email);
+	Ti.App.Properties.setString('userMobile', Alloy.Globals.dataToCapture.user_mobile);
+	Ti.App.Properties.setString('userMarket', Alloy.Globals.dataToCapture.user_market);
+	
 	Alloy.createController("FirstScreen").getView().open();
 	Ti.API.info('Alloy.Globals.dataToCapture : '+JSON.stringify(Alloy.Globals.dataToCapture));
 }
